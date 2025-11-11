@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+}
+
+html,
+body {
+  height: auto;
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+html {
+  background-image: linear-gradient(135deg, #6e85d2, #9b6fd2);
+}
+
+input:focus,
+button {
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#register-container {
+  max-width: 900px;
+  min-height: 80vh;
+  margin: 2rem auto;
+  display: flex;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 1px -8px;
+}
+
+#register-banner {
+  position: relative;
+  background-image: url("../img/fundo.png");
+  background-size: cover;
+  background-position: bottom;
+  width: 60%;
+}
+
+.logo {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  background-image: url("../img/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#banner-layer {
+  position: absolute;
+  background-color: rgba(52, 53, 54, 0.3);
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+}
+
+#banner-layer h1 {
+  color: #f1eeee;
+  font-size: 2.5rem;
+}
+
+#register-form {
+  background-color: #fdfdfd;
+  padding: 2rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+#register-form h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#register-form p {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
+  color: #aaa;
+}
+
+.form-control {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control label {
+  font-weight: bold;
+  margin-bottom: 0.1rem;
+}
+
+.form-control input {
+  border: none;
+  border-bottom: 1px solid #aaa;
+  padding: 0.6rem 0;
+}
+
+#open-generate-password,
+#generate-password {
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#open-generate-password:hover {
+  color: #0097ff;
+}
+
+#generated-password {
+  border: 1px solid #0097ff;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.4rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 1rem;
+  display: none;
+}
+
+#generated-password p {
+  color: #81d340;
+  margin-bottom: 0.5rem;
+}
+
+#register-form input[type="submit"],
+#generate-password,
+#copy-password {
+  background-color: #81d340;
+  color: #fdfdfd;
+  font-weight: bold;
+  opacity: 0.7;
+  border: none;
+  padding: 0.5rem 0.6rem;
+  cursor: pointer;
+  border-radius: 2rem;
+  max-width: 150px;
+  align-self: flex-end;
+  transition: 0.4s;
+}
+
+#copy-password {
+  margin-top: 0.5rem;
+  background-color: transparent;
+  border: 2px solid #81d340;
+  color: #81d340;
+}
+
+/* Segunda versão */
+#generate-options {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+}
+
+#generate-options .form-control {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#generate-options label {
+  font-size: 0.8rem;
+}
+
+#generate-options input[type="text"] {
+  width: 30px;
+  padding: 0.1rem;
+  text-align: right;
+  border: 1px solid #ddd;
+}
+
+#generate-options button {
+  background-color: #0097ff;
+  opacity: 0.7;
+  display: block;
+  margin: 0 auto;
+}
+
+.hide {
+  display: none;
+}
+
+#register-form input[type="submit"]:hover,
+#copy-password:hover,
+#generate-password:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 900px) {
+  #register-container {
+    width: 90%;
+  }
+
+  .logo {
+    top: 60%;
+    width: 100%;
+    height: 100%;
+  }
+
+  #banner-layer {
+    align-items: end;
+  }
+
+  #banner-layer h1 {
+    word-spacing: 50rem;
+  }
+
+  #register-form p {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #register-form p {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #register-form h2 {
+    font-size: 1.7rem;
+  }
+
+  #banner-layer h1 {
+    font-size: 2rem;
+  }
+
+  #register-banner {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #register-container {
+    flex-direction: column;
+  }
+
+  #register-banner {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .logo {
+    top: 70%;
+    left: 70%;
+    width: 60%;
+    height: 60%;
+  }
+
+  #banner-layer {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  #register-form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logo {
+    top: 75%;
+    left: 65%;
+    width: 65%;
+    height: 65%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .logo {
+    top: 80%;
+    left: 60%;
+    width: 70%;
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .logo {
+    top: 85%;
+    left: 50%;
+    width: 75%;
+    height: 75%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .logo {
+    top: 90%;
+    width: 80%;
+    height: 80%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .logo {
+    top: 95%;
+    width: 85%;
+    height: 85%;
+  }
+
+  #banner-layer h1 {
+    font-size: 1.7rem;
+  }
+
+  #register-form h2 {
+    font-size: 1.3rem;
+  }
+}

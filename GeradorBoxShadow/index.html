@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ralph & Teddy - Gerador de Box Shadow</title>
+    <link
+      rel="shortcut icon"
+      href="../imagens/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/scripts.js" defer></script>
+  </head>
+  <body>
+    <div id="box-shadow-generator">
+      <div id="controls-container">
+        <h2>Configure seu <span>Box Shadow</span></h2>
+        <div class="form-control">
+          <div class="range-input">
+            <label for="horizontal">Deslocamento Horizontal</label>
+            <input
+              type="range"
+              name="horizontal"
+              id="horizontal"
+              min="-100"
+              max="100"
+              value="5"
+            />
+          </div>
+          <!-- range-input -->
+          <div class="reference-input">
+            <input type="text" id="horizontal-value" name="horizontal-value" />
+            <p>px</p>
+          </div>
+        </div>
+        <!-- form-control -->
+
+        <div class="form-control">
+          <div class="range-input">
+            <label for="vertical">Deslocamento Vertical</label>
+            <input
+              type="range"
+              name="vertical"
+              id="vertical"
+              min="-100"
+              max="100"
+              value="5"
+            />
+          </div>
+          <!-- range-input -->
+          <div class="reference-input">
+            <input type="text" id="vertical-value" name="vertical-value" />
+            <p>px</p>
+          </div>
+        </div>
+        <!-- form-control -->
+        <div class="form-control">
+          <div class="range-input">
+            <label for="blur">Intensidade do Borrão (Blur)</label>
+            <input
+              type="range"
+              name="blur"
+              id="blur"
+              min="0"
+              max="100"
+              value="10"
+            />
+          </div>
+          <!-- range-input -->
+          <div class="reference-input">
+            <input type="text" id="blur-value" name="blur-value" />
+            <p>px</p>
+          </div>
+        </div>
+        <!-- form-control -->
+        <div class="form-control">
+          <div class="range-input">
+            <label for="spread">Intensidade do Espalhamento (Spread)</label>
+            <input
+              type="range"
+              name="spread"
+              id="spread"
+              min="-100"
+              max="100"
+              value="3"
+            />
+          </div>
+          <!-- range-input -->
+          <div class="reference-input">
+            <input type="text" id="spread-value" name="spread-value" />
+            <p>px</p>
+          </div>
+        </div>
+        <!-- form-control -->
+        <div class="form-control">
+          <div class="range-input">
+            <label for="opacity">Opacidade</label>
+            <input
+              type="range"
+              name="opacity"
+              id="opacity"
+              min="0"
+              max="1"
+              value="1"
+              step="0.01"
+            />
+          </div>
+          <!-- range-input -->
+          <div class="reference-input">
+            <input type="text" id="opacity-value" name="opacity-value" />
+            <p>%</p>
+          </div>
+        </div>
+        <!-- form-control -->
+        <div class="form-control">
+          <div class="range-input">
+            <label for="color">Cor da Sombra</label>
+            <input type="color" name="color" id="color" value="#000000" />
+          </div>
+          <!-- range-input -->
+          <div class="reference-input">
+            <input type="text" id="color-value" name="color-value" />
+          </div>
+        </div>
+        <!-- form-control -->
+        <div class="form-control">
+          <div class="range-input">
+            <label for="inset">Sombra Interna (Inset)</label>
+            <input type="checkbox" name="inset" id="inset" />
+          </div>
+        </div>
+        <!-- form-control -->
+      </div>
+      <!-- controls-container -->
+      <div id="preview">
+        <div id="box"><h2>Preview</h2></div>
+      </div>
+      <!-- preview -->
+    </div>
+    <!-- box-shadow-generator -->
+    <div id="generated-rule">
+      <h2>Copie e cole no <span>seu CSS</span></h2>
+      <div id="rules-area">
+        <p id="rule">box-shadow: <span></span>;</p>
+        <p id="webkit-rule">-webkit-box-shadow: <span></span>;</p>
+        <p id="moz-rule">-moz-box-shadow: <span></span>;</p>
+      </div>
+      <p id="copy-instructions">Clique no quadro acima para copiar as regras</p>
+    </div>
+    <!-- generated-rule -->
+  </body>
+</html>

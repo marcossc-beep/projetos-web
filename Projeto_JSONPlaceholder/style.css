@@ -1,0 +1,295 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--fonte-base);
+}
+
+/* ===== VARIÁVEIS GLOBAIS ===== */
+:root {
+  /* ===== CORES ===== */
+  --cor-primaria: #3a9286;
+  --cor-secundaria: #4fd1c5;
+  --cor-fundo: #f4f6f8;
+  --cor-texto: #222;
+  --cor-clara: #fff;
+  --cor-cinza: #e5e7eb;
+  --cor-sombra: rgba(0, 0, 0, 0.1);
+
+  /* ===== TIPOGRAFIA ===== */
+  --fonte-base: "Poppins", Arial, sans-serif;
+
+  /* ===== BORDAS E TRANSIÇÕES ===== */
+  --radius: 16px;
+  --transicao: all 0.3s ease;
+}
+
+/* ===== ESTRUTURA GERAL ===== */
+body {
+  min-height: 100vh;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  padding-bottom: 80px;
+}
+
+/* ===== CABEÇALHO ===== */
+.header {
+  background: linear-gradient(
+    135deg,
+    var(--cor-primaria),
+    var(--cor-secundaria)
+  );
+  color: var(--cor-clara);
+  text-align: center;
+  padding: 40px 20px 30px;
+  box-shadow: 0 4px 15px var(--cor-sombra);
+  border-radius: 0 0 20px 20px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--cor-clara);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.site-title {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+.slogan {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  background-color: var(--cor-clara);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 15px var(--cor-sombra);
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+/* ===== SEÇÃO INTRO ===== */
+.intro {
+  text-align: center;
+  padding: 30px 20px 10px;
+}
+
+.intro h2 {
+  color: var(--cor-primaria);
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ===== FORMULÁRIO ===== */
+.formulario {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  background: linear-gradient(135deg, var(--cor-cinza), #4b5563);
+  padding: 20px;
+  border-radius: 0 0 20px 0;
+}
+
+.form-control {
+  padding: 12px 14px;
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: var(--radius);
+  background-color: var(--cor-clara);
+  font-weight: 500;
+  transition: var(--transicao);
+  resize: none;
+}
+
+.form-control:focus {
+  border-color: var(--cor-primaria);
+  outline: none;
+  box-shadow: 0 0 8px rgba(58, 146, 134, 0.3);
+}
+
+/* ===== BOTÃO CRIAR ===== */
+.btn-criar {
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 12px 18px;
+  border: none;
+  border-radius: var(--radius);
+  background: linear-gradient(
+    135deg,
+    var(--cor-secundaria),
+    var(--cor-primaria)
+  );
+  color: white;
+  cursor: pointer;
+  transition: var(--transicao);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-criar:hover {
+  background: linear-gradient(
+    135deg,
+    var(--cor-primaria),
+    var(--cor-secundaria)
+  );
+}
+
+.btn-criar:active {
+  transform: translateY(2px);
+  background: var(--cor-primaria);
+}
+
+/* ===== POSTS ===== */
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+
+/* ===== CARD DE POST ===== */
+.post {
+  background-color: var(--cor-clara);
+  border: 1px solid var(--cor-cinza);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  transition: var(--transicao);
+}
+
+.post:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.12);
+}
+
+.post h2 {
+  font-size: 1.2rem;
+  color: var(--cor-primaria);
+  border-bottom: 2px solid var(--cor-secundaria);
+  padding-bottom: 6px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.post p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* ===== AÇÕES ===== */
+.acoes {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.acoes button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: var(--radius);
+  font-weight: 500;
+  cursor: pointer;
+  color: #fff;
+  transition: var(--transicao);
+}
+
+.acoes button:first-child {
+  background-color: #4fd1c5;
+}
+
+.acoes button:first-child:hover {
+  background-color: #38b2ac;
+}
+
+.acoes button:last-child {
+  background-color: #e53e3e;
+}
+
+.acoes button:last-child:hover {
+  background-color: #c53030;
+}
+
+/* ===== RODAPÉ ===== */
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding: 15px;
+  background-color: var(--cor-clara);
+  border-top: 1px solid var(--cor-cinza);
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--cor-texto);
+}
+
+.footer small {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 600px) {
+  .form-control {
+    width: 100%;
+  }
+
+  .btn-criar {
+    width: 100%;
+  }
+
+  .site-title {
+    font-size: 1.5rem;
+  }
+
+  .intro h2 {
+    font-size: 1.4rem;
+  }
+
+  .post h2 {
+    font-size: 1rem;
+  }
+
+  .post p {
+    font-size: 0.9rem;
+  }
+}

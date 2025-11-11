@@ -1,0 +1,92 @@
+/* Adaptações para telas menores */
+
+/* Geral */
+body {
+  font-size: 16px; /* Define o tamanho da fonte base para facilitar a leitura */
+}
+
+/* Header */
+header {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+header nav a {
+  padding: 16px;
+}
+
+/* Início */
+#inicio {
+  flex-direction: column; /* Empilha os elementos verticalmente em telas menores */
+  gap: 16px;
+  padding: 16px;
+}
+
+img {
+  max-width: 100%; /* Garante que as imagens se ajustem ao tamanho do contêiner pai */
+  height: auto;
+}
+
+/* Botões */
+.botoes {
+  flex-direction: column; /* Empilha os botões verticalmente em telas menores */
+}
+
+/* Clínica */
+#clinica {
+  flex-direction: column;
+  gap: 32px;
+  padding: 32px;
+  margin-left: 0; /* Remove a margem à esquerda em telas menores */
+}
+
+#clinica li {
+  margin-left: 0; /* Remove a margem à esquerda em telas menores */
+}
+
+/* Farmácia */
+#farmacia {
+  padding: 32px;
+}
+
+#farmacia img {
+  margin: 32px 0; /* Adapta a margem em telas menores */
+}
+
+/* Dúvidas */
+#duvidas {
+  flex-direction: column;
+  gap: 32px;
+  padding: 32px;
+}
+
+.duvida h3 {
+  padding: 16px;
+}
+
+/* Footer */
+footer {
+  flex-direction: column;
+  gap: 32px;
+  padding: 32px;
+}
+
+/* Adaptações específicas do rodapé */
+footer img,
+footer .titulo {
+  margin-bottom: 16px;
+}
+
+footer nav a {
+  margin-bottom: 8px;
+}
+
+footer p {
+  margin-bottom: 8px;
+}
+
+#copyright {
+  padding: 16px;
+}

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Mercado</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="../imagens/favicon.png" type="image/x-icon" />
+</head>
+<body>
+    <header id="header">
+        <div class="interface">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="imgs/logo.png" alt="">
+                </a>
+            </div><!--logo-->
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="about.html">Quem Somos</a></li>
+                    <li><a href="#produto">Produtos</a></li>
+                    <li><input type="text" id="buscador" name="buscador"  onclick="buscador()"></li>
+                    <li><a href="#parceiros">Parceiros</a></li>
+                    <li><a href="#calcCarbono">Consciência</a></li>
+                </ul>
+            </nav>
+            <div>
+                <div class="btn-login"><a href="login.html"><button>LOGIN</button></a></div>
+            </div>
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="#">Ínicio</a></li>
+                        <li><a href="about.html">Quem Somos</a></li>
+                        <li><a href="#produto">Produtos</a></li>
+                        <li><a href="#parceiros">Parceiros</a></li>
+                        <li><a href="#calcCarbono">Consciência</a></li>
+                    </ul>
+                </nav>
+
+            </div><!--menu-mobile-->
+            <div class="overlay-menu" id="overlay-menu"></div>
+        </div> <!--interface-->
+    </header>
+    <main>
+        <section class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>Eco<spam>-</spam>Mercado</h1>
+                        <p>Onde cada compra é uma decisão pelo bem do planeta.</p>
+                    <div><!--txt-topo-site-->
+                </div><!--flex-->
+            </div><!--interface-->
+            <div class="img-topo-site">
+                <img src="imgs/img-topo.png" alt="">
+            </div><!--img-topo-site-->
+        </section><!--topo-do-site-->
+        <section id="produto" class="produto">
+            <div class="interface">
+                <h2 class="titulo">Eco <span>Cup</span>
+                </h2>
+                <div class="flex">
+                  <div class="img-produto">
+                    <img src="imgs/eco-cup.jpg" alt="">
+                  </div><!--img-eco-cup-->
+                  <div class="produto-content">
+                    <p>Apresentamos a nossa mais recente inovação em copos de papel descartáveis ecológicos - o EcoCup.</p>
+                    <p>Feito com materiais biodegradáveis de alta qualidade, o Eco-cup foi projetado para fornecer uma solução sustentável para todas as suas necessidades de bebidas.</p> 
+                    <p>Isto garante que os nossos copos tenham um impacto mínimo no ambiente, mantendo ao mesmo tempo os mais elevados padrões de qualidade.</p>
+                    <p>Projetado para suportar o calor e manter a integridade de suas bebidas, o EcoCup é adequado tanto para bebidas quentes quanto frias.</p>
+                    <div class="btn-login"><a href="ecocup.html"><button>Saiba Mais</button></a></div>
+                  </div><!--produto-content-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--produto-->
+        <section id="produto" class="produto">
+            <div class="interface">
+                <h2 class="titulo">Eco <span>Brush</span>
+                </h2>
+                <div class="flex">
+                  <div class="img-produto">
+                    <img src="imgs/ecobrush.PNG" alt="">
+                  </div><!--img-eco-cup-->
+                  <div class="produto-content">
+                    <p>A escova de dentes sustentável e biodegradável EcoBrush é feita de bambu, destacando-se por sua capacidade de reduzir significativamente o impacto ambiental em comparação com as opções convencionais de plástico.</p>
+                    <p>Além de serem compostáveis, as escovas EcoBrush promovem a conscientização sobre práticas sustentáveis, contribuem para a diminuição de resíduos plásticos e incentivam a indústria a adotar abordagens mais ecológicas.</p> 
+                    <p>Com embalagens minimalistas e cerdas biodegradáveis, oferecem uma alternativa consciente e funcional para os consumidores, representando uma escolha mais responsável nos cuidados diários com a saúde bucal.</p>
+                    <p>A EcoBrush não apenas cuida do planeta, mas também proporciona uma experiência de escovação premium, com cerdas macias que garantem uma limpeza eficaz e suave para seus dentes e gengivas.</p>
+                    <div class="btn-login"><a href="ecobrush.html"><button>Saiba Mais</button></a></div>
+                  </div><!--produto-content-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--produto-->
+        <section id="produto" class="produto">
+            <div class="interface">
+                <h2 class="titulo">Eco <span>Straw</span>
+                </h2>
+                <div class="flex">
+                  <div class="img-produto">
+                    <img src="imgs/ecostraw.PNG" alt="">
+                  </div><!--img-eco-cup-->
+                  <div class="produto-content">
+                    <p>A escolha por canudos sustentáveis EcoStraw contribui para a redução significativa do impacto ambiental, uma vez que esses materiais são menos prejudiciais ao ecossistema.</p>
+                    <p>O bambu, por exemplo, é uma fonte renovável que cresce rapidamente e requer menos recursos para produção.</p>
+                    <p>Os Canudos EcoStraw são duráveis e reutilizáveis, evitando a necessidade de canudos descartáveis de uso único.</p>
+                    <p>Além de sua contribuição para um meio ambiente mais saudável, os Canudos EcoStraw proporcionam uma experiência de consumo aprimorada, permitindo que você desfrute de suas bebidas favoritas de maneira sustentável e elegante.</p>                    <div class="btn-login"><a href="ecostraw.html"><button>Saiba Mais</button></a></div>
+                  </div><!--produto-content-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--produto-->
+        <section id="produto" class="produto">
+            <div class="interface">
+                <h2 class="titulo">Eco <span>Glass</span>
+                </h2>
+                <div class="flex">
+                  <div class="img-produto">
+                    <img src="imgs/ecoglass.PNG" alt="">
+                  </div><!--img-eco-cup-->
+                  <div class="produto-content">
+                    <p>Os óculos sustentáveis e biodegradáveis EcoGlass destacam-se como uma opção inovadora e ecológica na indústria óptica.</p>
+                    <p>Fabricados com materiais biodegradáveis, como acetato à base de plantas ou madeira sustentável, esses óculos oferecem benefícios significativos para o meio ambiente.</p>
+                    <p>Sua biodegradabilidade reduz o impacto ambiental associado aos resíduos plásticos, enquanto a escolha por fontes renováveis contribui para a conservação de recursos.</p>
+                    <p>Além disso, ao optar pelo EcoGlass, os consumidores promovem a conscientização e influenciam positivamente a demanda por práticas mais ecológicas na indústria da moda.</p>
+                    <p>Com designs inovadores e duráveis, o Ecoglass proporciona uma opção estilosa que atende às expectativas estéticas modernas, incentivando um consumo mais responsável e eco-friendly.</p>
+                    <div class="btn-login"><a href="ecoglass.html"><button>Saiba Mais</button></a></div>
+                  </div><!--produto-content-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--produto-->
+        <section id="produto" class="produto">
+            <div class="interface">
+                <h2 class="titulo">Eco <span>Bag</span>
+                </h2>
+                <div class="flex">
+                  <div class="img-produto">
+                    <img src="imgs/ecobag.PNG" alt="">
+                  </div><!--img-eco-cup-->
+                  <div class="produto-content">
+                    <p>A Ecobag é uma alternativa sustentável e reutilizável às sacolas plásticas descartáveis.</p>
+                    <p>Feita de materiais duráveis como algodão orgânico ou fibras recicladas, oferece benefícios ambientais significativos.</p>
+                    <p>Ao reduzir o consumo de plástico, contribui para a diminuição da poluição e promove um ciclo de vida mais longo e sustentável.</p>
+                    <p>Além disso, a escolha por Ecobag reflete um compromisso consciente com práticas de consumo responsáveis, incentivando um estilo de vida sustentável de maneira acessível e estilosa. </p>
+                    <p>Ao optar por Ecobag, os consumidores participam ativamente na construção de uma cultura de consumo mais consciente e ambientalmente amigável.</p>
+                    <div class="btn-login"><a href="ecobag.html"><button>Saiba Mais</button></a></div>
+                    <p>&nbsp;</p>
+                  </div><!--produto-content-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--produto-->
+        <section id="produto" class="produto">
+            <div class="interface">
+                <h2 class="titulo">Eco <span>Slipper</span>
+                </h2>
+                <div class="flex">
+                  <div class="img-produto">
+                    <img src="imgs/ecoslipper.PNG" alt="">
+                  </div><!--img-eco-cup-->
+                  <div class="produto-content">
+                    <p>As sandálias sustentáveis e biodegradáveis EcoSlipper são uma alternativa eco-friendly inovadora no universo do calçado.</p>
+                    <p>Feitas de materiais biodegradáveis, como fibras naturais ou biopolímeros, essas sandálias oferecem benefícios ambientais significativos.</p>
+                    <p>Sua principal vantagem está na capacidade de se decompor naturalmente, contrastando com o impacto duradouro dos materiais sintéticos presentes em sandálias convencionais.</p>
+                    <p>Ao optar pela EcoSlipper, os consumidores demonstram um compromisso consciente com práticas de consumo responsáveis, incentivando uma indústria da moda mais sustentável. </p>
+                    <div class="btn-login"><a href="ecoslipper.html"><button>Saiba Mais</button></a></div>
+                  </div><!--produto-content-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--produto-->
+        <section id="depoimentos" class="depoimentos">
+          <div class="interface">
+              <h2 class="titulo">O que dizem nossos <span>Clientes...</span>
+              </h2>
+              <div class="flex">
+                  <div class="depoimentos-box">
+                      <h3>Naruto Uzumaki</h3>
+                      <p>"Não poderia estar mais feliz com as minhas compras. A variedade de produtos e marcas comprometidas com a sustentabilidade é impressionante. Cada compra que faço me deixa com a sensação de estar fazendo a diferença no mundo. Sem dúvida, é o meu destino preferido para compras éticas e ecológicas!"
+                      </p>
+                      <div class="">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                    </div><!--depoimentos-box-->
+                  <div class="depoimentos-box">
+                      <h3>Kisame Hoshigaki</h3>
+                      <p>"Encontrar produtos de alta qualidade, aliados a práticas sustentáveis, tornou minhas escolhas de compra muito mais significativas. Estou orgulhoso de apoiar um comércio que se preocupa com o meio ambiente e proporciona aos clientes a oportunidade de fazer escolhas conscientes."</p>
+                      <div class="">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                    </div><!--depoimentos-box-->
+                  <div class="depoimentos-box">
+                      <h3>Tsunade Senju</h3>
+                      <p>"Além de encontrar produtos incríveis, fiquei extremamente satisfeita com o compromisso da plataforma em promover práticas ambientalmente conscientes. É ótimo saber que minhas compras contribuem para um futuro mais sustentável."</p>
+                      <div class="">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                    </div><!--depoimentos-box-->
+
+              </div><!--flex-->
+          </div><!--interface-->
+        </section><!--depoimentos-->
+        <section id="parceiros" class="parceiros">
+          <div class="interface">
+              <h2 class="titulo">Marcas <span>Sustentáveis </span>que fazem a diferença
+              </h2>
+              <div class="parceiros-box">
+                  <div class="flex">
+                      <img src="imgs/pantys.PNG" alt="">
+                      <div>
+                        <h3>Pantys</h3>
+                        <p>A marca revolucionou o mercado feminino com sua calcinha <span>absorvente</span> e <span>ecológica</span>, hoje são referência no mercado. Seu principal produto é sustentável porque reduz o uso de absorventes convencionais, economizando um rio de água e dinheiro.</p>
+                      </div>
+                  </div><!--parceiros-box-->
+                    <div class="flex">
+                      <img src="imgs/minimadeia.PNG" alt="">
+                      <div">
+                          <h3>Minimadeia</h3>
+                          <p>Nessa marca as roupas são confeccionadas com matérias-primas eco-friendly como <span>algodão orgânico com tingimento natural</span> e <span>jeans feito a partir de tecidos reciclados</span>, tudo produzido de forma ética, consciente e responsável. A marca também conta com uma parceria com a <span>Eu Reciclo</span>, uma instituição que valida a compensação ambiental das embalagens colocadas no mercado.</p>                        </div><!--parceiros-box-->
+                      <div class="depoimentos-box">
+              </div><!--flex-->
+          </div><!--interface-->
+        </section><!--parceiros-->
+        <section id="recicle" class="recicle">
+          <div class="interface">
+              <h2 class="titulo">Faça o bem e <span>Recicle </span></h2>
+              <h3>Alguns Ecopontos interessantes na Grande Florianópolis para você:</h3>
+              <div class="flex">
+                  <div class="card-recicle">
+                    <h3>Ecoponto Itacorubi</h3>
+                    <p><span>Endereço:</span> Rodovia Admar Gonzaga,72</p>
+                    <p><span>Horário:</span> Todos os dias das 7h às 19h</p>
+                  </div><!--card-recicle-->
+                  <div class="card-recicle">
+                    <h3>Ecoponto Rio Vermelho</h3>
+                    <p><span>Endereço:</span> Rua Cândido Pereira dos Anjos, S/N</p>
+                    <p><span>Horário:</span> Todos os dias das 7h às 19h</p>
+                  </div><!--card-recicle-->
+                  <div class="card-recicle">
+                    <h3>Ecoponto Capoeiras</h3>
+                    <p><span>Endereço:</span> Terminal de Capoeiras, Rua Professor Egídio Ferreira, S/N </p>
+                    <p><span>Horário:</span> Todos os dias das 7h às 12h e das 13h às 19h</p>
+                  </div><!--card-recicle-->
+              </div><!--flex-->
+              <h4>O que podemos entregar sem custo algum nos Ecopontos de Florianópolis?</h4>
+              <p>Eletrônicos; Entulho; Madeiras e Podas; Recicláveis; Óleo de Cozinha</p>
+          </div><!--interface-->
+        </section><!--recicle-->
+        <section id="calcCarbono" class="calcCarbono">
+          <div class="interface">
+            <h2 class="titulo">Taxa de <span>Agressão</span> de Gás Carbono</h2>
+            <p>No cenário atual, a discussão sobre o nível de carbono em produtos e países tornou-se crucial, refletindo a crescente conscientização global sobre as mudanças climáticas. O nível de carbono em produtos, muitas vezes referido como pegada de carbono, é um indicador do impacto ambiental associado à produção, distribuição e descarte de mercadorias. Confira no gráfico abaixo.</p>
+            <div class="flex">
+              <img src="imgs/grafico-removebg-preview.png" alt="">
+            </div><!--flex-->
+            <p>Pensando nisso, investimos em pesquisa e desenvolvimento de tecnologias mais limpas e eficientes em termos de carbono, incentivando a inovação nas cadeias de produção.</p>
+          </div><!--interface-->
+        </section><!--calcCarbono-->
+        <section class="calcCarbono interface"><!--frete-->
+          <h2 class="titulo">Mais Parceria com o <span>Meio Ambiente...</span></h2>
+          <h2 class="titulo">Frete <span>Sustentável</span></h2>
+            <div class="flex">
+              <div class="frete-content">
+                <p>Os caminhões elétricos apresentam diversos benefícios, incluindo a redução de emissões poluentes, menor custo operacional devido à eletricidade mais barata e manutenção simplificada, eficiência energética superior, incentivos governamentais, menor poluição sonora, desenvolvimento tecnológico, melhoria na imagem corporativa e adaptação às demandas crescentes por práticas sustentáveis. Esses veículos desempenham um papel crucial na transição para um transporte mais limpo e eficiente.</p>
+              </div>
+              <div class="frete-content">
+                <img src="imgs/caminhao (2).png" alt="">
+              </div>
+            </div>
+        </section><!--frete-->
+        <section class="calcCarbono interface"><!--reflorestamento-->
+          <h2 class="titulo">Ainda é pouco<span>?</span></h2>
+          <h2 class="titulo">Também somos amigos das <span>Árvores...</span></h2>
+            <div class="flex">
+              <div class="frete-content">
+              <p>O reflorestamento é o plantio de árvores em áreas degradadas e apresenta diversos benefícios. Ele contribui para a conservação da biodiversidade, o sequestro de carbono, a melhoria da qualidade do ar e da água, o controle da erosão do solo, o fornecimento de recursos naturais, a promoção do turismo, a preservação de ecossistemas únicos, a sustentabilidade a longo prazo e o combate à desertificação. Essa prática desempenha um papel essencial na restauração ambiental e na promoção de ecossistemas saudáveis.</p>              </div>
+              <div class="frete-content">
+                <img class="reflorestar"  src="imgs/reflorestamento.png" alt="Foto de uma imagem com as mão dadas compartilhando sementes para plantio de árvores">
+              </div>
+            </div>
+        </section><!--reflorestamento-->
+        <section class="calcCarbono">
+          <h2 class="titulo">Calcule o nível de <span>Carbono</span></h2>
+          <form id="calculadora">
+            <label for="eletrecidade">Consumo de Eletricidade (kWh):</label>
+            <input type="number" id="eletrecidade" name="eletrecidade" required>
+    
+            <label for="gas">Consumo de Gás (m³):</label>
+            <input type="number" id="gas" name="gas" required>
+    
+            <label for="combustivel">Consumo de Combustível (litros):</label>
+            <input type="number" id="combustivel" name="combustivel" required>
+    
+            <div class="btn-login" ><button type="button" class="btnlogin" onclick="calculadora()">Calcular Emissões</button></div>
+    
+            <div id="resultado"></div>
+        </form>
+        </section>
+        <footer>
+            <div class="interface"><!--interface-->
+                <div class="line-footer">
+                    <div class="flex">
+                      <div class="logo">
+                        <h1>Eco<spam>-</spam>Mercado</h1>
+                        <a href="#">
+                            <img src="imgs/logo.png" alt="">
+                        </a>
+                        <p>Onde cada compra é uma decisão pelo bem do planeta.</p>
+                      </div><!--logo-->
+                      <div class="btn-social">
+                        <h3>Redes Sociais</h3>
+                        <a href="https://www.instagram.com/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+                        <a href="https://www.linkedin.com/home" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+                        <a href="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNzAyNDcwOTc0LCJjYWxsc2l0ZV9pZCI6MjY5NTQ4NDUzMDcyMDk1MX0%3D" target="_blank"><button><i class="bi bi-facebook"></i></i></button></a>
+                    </div><!--btn-social-->
+                    </div><!--flex-->
+                </div><!--line-footer-->
+                <div class="line-footer borda">
+                    <h3>Somos uma empresa com selo ESG</h3>
+                    <img src="imgs/seloesg.png" alt="">
+                    <h3>Dicas e/ou Sugestões</h3>
+                    <p><i class="bi bi-envelope-fill"> <a href="mailto:andersonrdutra7@gmail.com"> ecomercado@gmail.com</a></i></p>
+                    <p>Created by&nbsp;<a href="time.html" target="_blank"> Alunos do Senac Palhoça </a></i>.</p>
+                </div><!--line-footer-->
+            </div><!--interface-->
+        </footer>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,173 @@
+/* responsividade */
+/* small laptops a partir de 1100px */
+@media (max-width: 1100px) {
+  .plans-container {
+    width: 95%;
+  }
+
+  .plan {
+    margin: 0 5px;
+  }
+}
+
+/* tablet 900px*/
+@media (max-width: 900px) {
+  .menu-desktop,
+  .default-btn {
+    display: none;
+  }
+
+  .btn-abrir-menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .main-banner {
+    padding: 6rem;
+  }
+
+  .main-banner p {
+    padding: 0;
+    width: 120%;
+    margin: 0 -10%;
+  }
+
+  .teddy {
+    bottom: -30px;
+    width: 90px;
+  }
+
+  .ralph {
+    bottom: -30px;
+    width: 100px;
+  }
+
+  .searchdomain-container {
+    padding: 2rem 6rem;
+  }
+
+  .searchdomain-container input[type="text"]::placeholder {
+    text-align: center;
+  }
+}
+
+/* celular 576px */
+@media (max-width: 665px) {
+  .logo {
+    width: 80px;
+  }
+
+  .navbar-itens li {
+    margin-left: 24px;
+    font-size: 12px;
+  }
+
+  .default-btn {
+    padding: 12px 16px;
+  }
+
+  .services-container ul {
+    flex-direction: column;
+  }
+
+  .plans-container {
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+
+  .plan {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .searchdomain-container h2,
+  .contact-container h2 {
+    font-size: 28px;
+  }
+
+  .searchdomain-container input[type="text"] {
+    width: 100%;
+  }
+
+  .contact-container {
+    padding: 3rem 2rem;
+  }
+
+  .contact-container input,
+  .contact-container textarea {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 475px) {
+  .navbar-container {
+    padding: 0 0rem;
+  }
+
+  .navbar-itens {
+    right: 2rem;
+    margin: 0;
+  }
+
+  .main-banner h1 {
+    font-size: 48px;
+  }
+
+  .main-banner p {
+    font-size: 28px;
+  }
+
+  .searchdomain-container {
+    padding: 2rem;
+  }
+
+  .searchdomain-container p,
+  .searchdomain-container input[type="text"],
+  .searchdomain-container input[type="submit"] {
+    font-size: 18px;
+  }
+
+  .contact-container h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 440px) {
+  .fa-bars {
+    font-size: 48px;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px 0;
+    transition: 0.5s;
+  }
+
+  .fa-bars:hover {
+    color: #ccc;
+  }
+
+  .main-banner {
+    padding: 6rem 3rem;
+  }
+
+  .main-banner h1 {
+    font-size: 40px;
+  }
+
+  .main-banner p {
+    font-size: 24px;
+  }
+
+  .pricing-container h2 {
+    font-size: 28px;
+  }
+
+  .pricing-container p {
+    font-size: 18px;
+  }
+
+  .searchdomain-container input[type="text"] {
+    font-size: 18px;
+  }
+}

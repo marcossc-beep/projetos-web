@@ -1,0 +1,225 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--fonte-base);
+}
+
+:root {
+  /* ===== CORES PRINCIPAIS ===== */
+  --cor-primaria: #3a9286;
+  --cor-secundaria: #4fd1c5;
+  --cor-fundo: #f4f6f8;
+  --cor-texto: #222;
+  --cor-clara: #fff;
+  --cor-cinza: #e5e7eb;
+  --cor-sombra: rgba(0, 0, 0, 0.1);
+
+  /* ===== TIPOGRAFIA ===== */
+  --fonte-base: "Poppins", Arial, sans-serif;
+
+  /* ===== RADIUS E TRANSIÇÕES ===== */
+  --radius: 16px;
+  --transicao: all 0.3s ease;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  padding-bottom: 80px;
+}
+
+/* ===== CONTAINER PRINCIPAL ===== */
+.container {
+  flex-grow: 1;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+.container h1 {
+  margin: 3px;
+  border-radius: 20px 0px 0px 0px;
+  text-align: center;
+  background: linear-gradient(135deg, var(--cor-cinza), #4b5563);
+  color: var(--cor-clara);
+  padding: 20px 10px;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+.container form {
+  margin: 3px;
+  border-radius: 0px 0px 20px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--cor-cinza), #4b5563);
+  padding: 20px 10px;
+  gap: 10px;
+}
+
+.form-control {
+  padding: 10px 14px;
+  width: 280px;
+  border: 2px solid #ccc;
+  border-radius: var(--radius);
+  background-color: var(--cor-clara);
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.form-control:focus {
+  border-color: var(--cor-primaria);
+  outline: none;
+  box-shadow: 0 0 8px rgba(58, 146, 134, 0.3);
+}
+
+/* ===== BOTÕES ===== */
+.btn-buscar,
+.prev-page,
+.next-page {
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 16px;
+  border: none;
+  border-radius: var(--radius);
+  background: linear-gradient(
+    135deg,
+    var(--cor-secundaria),
+    var(--cor-primaria)
+  );
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-buscar:hover,
+.prev-page:hover,
+.next-page:hover {
+  background: linear-gradient(
+    135deg,
+    var(--cor-primaria),
+    var(--cor-secundaria)
+  );
+}
+
+.btn-buscar:active,
+.prev-page:active,
+.next-page:active {
+  transform: translateY(0);
+  background: var(--cor-primaria);
+}
+
+/* ===== FILMES E PAGINAÇÃO ===== */
+.filme-info,
+.paginacao {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  gap: 20px;
+}
+
+/* ===== CARD DE FILME ===== */
+.filmes {
+  font-weight: bold;
+  border-radius: var(--radius);
+  background-color: var(--cor-clara);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 15px;
+  width: 300px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.filmes:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+.filmes-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.filmes-h2 {
+  font-size: 1.2rem;
+  text-align: center;
+  border-bottom: 3px solid var(--cor-primaria);
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.filmes-h3 {
+  font-size: 0.95rem;
+  text-align: center;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/* ===== IMAGEM DO FILME ===== */
+img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* ===== RODAPÉ ===== */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background-color: var(--cor-clara);
+  border-top: 1px solid #e0e0e0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer > img {
+  max-width: 60px;
+  max-height: 60px;
+  box-shadow: none;
+  filter: sepia(50%) grayscale(30%) contrast(90%) brightness(80%);
+}
+
+.footer p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--cor-texto);
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 500px) {
+  .form-control {
+    width: 100%;
+  }
+
+  .btn-buscar {
+    width: 100%;
+  }
+
+  .container > h1 {
+    font-size: 1.5rem;
+  }
+
+  img {
+    height: 320px;
+  }
+}

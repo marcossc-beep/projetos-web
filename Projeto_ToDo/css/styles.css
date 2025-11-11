@@ -1,0 +1,314 @@
+/* Geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+body {
+  background-image: url("../img/fundo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  background-color: #fdfdfd;
+  color: #102f5e;
+  border: 2px solid #102f5e;
+  padding: 0.3rem 0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+button:hover {
+  background-color: #102f5e;
+}
+
+button:hover > i {
+  color: #fff;
+}
+
+button i {
+  pointer-events: none;
+  color: #102f5e;
+  font-weight: bold;
+}
+
+input,
+select {
+  padding: 0.25rem 0.5rem;
+}
+
+.hide {
+  display: none;
+}
+
+/* Header */
+.container-header {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.container-header .title-mobile {
+  display: none;
+}
+
+/* Todo Form */
+.todo-container {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+}
+
+#todo-form,
+#edit-form {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+#todo-form p,
+#edit-form p {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-control {
+  display: flex;
+}
+
+.form-control input {
+  margin-right: 0.3rem;
+  width: 100%;
+  flex-grow: 1;
+}
+
+#cancel-edit-btn {
+  margin-top: 1rem;
+  color: #444;
+}
+
+/* Todo Toolbar */
+#toolbar {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+}
+
+#toolbar h4 {
+  margin-bottom: 0.5rem;
+}
+
+#search {
+  border-right: 1px solid #ddd;
+  padding-right: 1rem;
+  margin-right: 0rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#search form {
+  display: flex;
+}
+
+#search input {
+  width: 100%;
+  margin-right: 0.3rem;
+}
+
+#filter {
+  width: 35%;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#filter select {
+  flex: 1;
+}
+
+/* Todo List */
+.todo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+.todo h3 {
+  flex: 1;
+  font-size: 0.9rem;
+}
+
+.todo button {
+  margin-left: 0.4rem;
+}
+
+.done {
+  background: #395169;
+}
+
+.done h3 {
+  color: #fff;
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+/* Img-pets */
+.img-pets {
+  position: relative;
+}
+
+.img-pets figure img {
+  width: 200px;
+}
+
+.ralph {
+  position: absolute;
+  transform: rotate(-25deg);
+  left: 200px;
+  bottom: -30%;
+}
+
+.teddy {
+  position: absolute;
+  transform: rotate(25deg);
+  right: 200px;
+  top: -10%;
+}
+
+@media screen and (max-width: 1150px) {
+  .ralph {
+    left: 100px;
+  }
+
+  .teddy {
+    right: 100px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .ralph {
+    left: 0px;
+  }
+
+  .teddy {
+    right: 0px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+  }
+
+  .img-pets {
+    grid-row: 2;
+  }
+
+  .teddy {
+    transform: rotate(25deg);
+    right: 30px;
+    top: -30px;
+  }
+
+  .ralph {
+    transform: rotate(-15deg);
+    right: 0;
+    top: 100px;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .container-header .title-desktop {
+    display: none;
+  }
+
+  .container-header .title-mobile {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  main {
+    grid-gap: 0px;
+  }
+
+  .todo-container {
+    width: 90%;
+    z-index: 1;
+  }
+
+  #toolbar {
+    flex-direction: column;
+  }
+
+  #search {
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+  }
+
+  #search input,
+  #search button {
+    margin-bottom: 1rem;
+  }
+
+  #search button {
+    margin-right: -1rem;
+  }
+
+  #filter {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .img-pets {
+    grid-row: 1;
+    display: none;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  html {
+    scrollbar-width: none;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .container-header .title-mobile {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .container-header .title-mobile {
+    width: 80%;
+  }
+}

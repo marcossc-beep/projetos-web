@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabuada</title>
+    <link
+      rel="shortcut icon"
+      href="../imagens/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/scripts.js" defer></script>
+  </head>
+  <body>
+    <img class="logo" src="img/logo.png" alt="Logo Tabuada" />
+    <h2>
+      Preencha os campos abaixo com números inteiros e confirme para gerar a sua
+      tabuada
+    </h2>
+    <form id="multiplication-form">
+      <div class="form-control">
+        <label for="number">Tabuada de</label>
+        <input type="number" name="number" id="number" placeholder="Ex: 3" />
+      </div>
+      <div class="form-control">
+        <label for="multiplicator">Multiplicar até</label>
+        <input
+          type="number"
+          name="multiplicator"
+          id="multiplicator"
+          placeholder="Ex: 10"
+        />
+      </div>
+      <input type="submit" value="Calcular" />
+    </form>
+    <div class="animation">
+      <img src="img/teste.PNG" alt="Ralph e Teddy praticando Matemática" />
+      <div class="text-ralph"></div>
+      <div class="text-teddy"></div>
+    </div>
+    <div id="multiplication-table">
+      <h2 id="multiplication-title">Tabuada do número <span></span></h2>
+      <div id="multiplication-operations">
+        <p>Informe um número inteiro para calcular sua tabuada</p>
+      </div>
+    </div>
+  </body>
+</html>

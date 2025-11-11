@@ -1,0 +1,14 @@
+.produto-content div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.produto-content {
+  width: 100%;
+  text-align: center;
+}
+
+footer {
+  margin-top: 40px;
+}

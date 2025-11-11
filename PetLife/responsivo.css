@@ -1,0 +1,153 @@
+@media screen and (max-width: 1300px) {
+  body {
+    font-size: 16px;
+  }
+
+  header {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  header nav a {
+    padding: 16px;
+  }
+
+  #inicio {
+    gap: 16px;
+    padding: 16px;
+    border: 5px solid #ff725e;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .absolute {
+    max-width: 100%;
+    height: auto;
+    left: 0;
+    top: 40%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  #inicio {
+    border: 5px solid green;
+  }
+
+  .botao,
+  .botao-transparente {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #inicio {
+    border: 5px solid blue;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .botoes {
+    flex-direction: column;
+    margin-top: -25px;
+  }
+
+  img,
+  .absolute {
+    max-width: 60%;
+  }
+
+  .absolute {
+    top: 200px;
+  }
+
+  #inicio {
+    border: 5px solid red;
+    text-align: center;
+  }
+
+  h1,
+  h2 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  img {
+    max-width: 100%;
+  }
+
+  .absolute {
+    max-width: 100%;
+    top: 250px;
+    left: 32px;
+  }
+
+  #inicio {
+    border: 5px solid rgb(122, 11, 96);
+    flex-direction: column;
+  }
+
+  h1,
+  h2 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  header {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  header nav a {
+    padding: 6px;
+  }
+
+  .absolute {
+    top: 200px;
+    left: 0px;
+  }
+
+  #inicio {
+    border: 5px solid yellow;
+    gap: 0px;
+  }
+
+  h1,
+  h2 {
+    font-size: 28px;
+    margin-top: -20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  header nav a {
+    padding: 6px;
+  }
+
+  .absolute {
+    top: 200px;
+    left: 0px;
+  }
+
+  #inicio {
+    border: 5px solid rgb(23, 23, 22);
+    gap: 0px;
+  }
+
+  h1,
+  h2 {
+    font-size: 28px;
+    margin-top: -20px;
+  }
+}

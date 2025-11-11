@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ralph & Teddy - DevNotes</title>
+    <link
+      rel="shortcut icon"
+      href="../imagens/favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/scripts.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="img/logo.png" alt="Logo Ralph & Teddy - DevNotes" />
+      <div id="search-container">
+        <i class="bi bi-search"></i>
+        <input type="text" id="search-input" placeholder="Busque uma nota" />
+      </div>
+      <button id="export-csv">
+        Exportar CSV <i class="bi bi-download"></i>
+      </button>
+    </header>
+    <div id="add-note-container">
+      <input type="text" id="note-content" placeholder="O que deseja anotar?" />
+      <button class="add-note"><i class="bi bi-plus-lg"></i></button>
+    </div>
+    <div id="notes-container"></div>
+  </body>
+</html>

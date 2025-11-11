@@ -1,0 +1,581 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container{
+    background-color: antiquewhite;
+    width: 80%;
+    display: flexbox;
+    margin: 0 auto;
+    top: 0; left: 0; right: 0; bottom: 0;
+}
+
+.cabecalho{
+    background-image: url("imagens/london.jpg");
+    background-size: cover;
+    height: 70vh;
+    display: block;
+}
+
+.nav-bar{
+    width: 100%;
+    height: 8%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.nav-logo{
+    color: red;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.span-logo{
+    font-size: 25px;
+}
+
+.header-section{
+    width: 75%;
+    background-color: white;
+    margin: 12% 12%;
+}
+
+.header-section > nav{
+    font-size: small;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-section > nav > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    width: 100%;
+}
+
+.header-section-flight, .header-section-hotel, .header-section-rentall{
+    grid-area: flight;
+    width: 100%;
+    padding: 1%;
+}
+
+.header-section-flight:hover{
+    background-color: red;
+    cursor: pointer
+}
+
+.header-section-hotel:hover{
+    background-color: red;
+    cursor: pointer
+}
+
+.header-section-rentall:hover{
+    background-color: red;
+    cursor: pointer
+}
+
+.header-section > h1{
+    margin: 2%;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.header-section > span{
+    margin: 2%;
+    margin-right: 42.5%;
+    font-size: small;
+}
+
+.header-section-search-input{
+    margin: 2%;
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    opacity: 40%;
+}
+
+.header-section-search-input > input{
+    width: 49%;
+    padding: 1%;
+}
+
+.header-section > button{
+    margin: 0% 0% 1% 2%;
+    padding: 1%;
+    font-size: small;
+    background-color: rgb(88, 88, 88);
+    color: aliceblue;
+    border: none;
+}
+
+.header-section > button:hover{
+    cursor: pointer;
+    background-color: brown;
+}
+
+.main-ofers, .main-tickets, .main-subscribe ,.main-contact{
+    margin-left: 10%;
+    width: 80%;
+}
+
+.main-ofers > h1, .main-ofers > h3, .main-tickets > h1, .main-tickets > h3{
+    padding: 1% 0%;
+}
+
+.main-ofers-cards{
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 5fr 2.5fr 2.5fr;
+    grid-template-rows: 5fr 5fr;
+    grid-template-areas:
+    "card-master card1 card2"
+    "card-master card3 card4"
+}
+
+.card-master{
+    grid-area: card-master;
+}
+
+.img-cinque{
+    width: 100%;
+    height: 100%;
+}
+
+.img-york{
+    grid-area: card1;
+    max-width: 100%;
+    height: 100%;
+}
+
+.img-franc{
+    grid-area: card2;
+    max-width: 100%;
+    height: 100%;
+}
+
+.img-pisa{
+    grid-area: card3;
+    max-width: 100%;
+    height: 100%;
+}
+
+.img-paris{
+    grid-area: card4;
+    max-width: 100%;
+    height: 100%;
+}
+
+.img-cinque:hover, .img-franc:hover, .img-paris:hover, .img-pisa:hover, .img-york:hover{
+    cursor: pointer;
+    padding: 2px;
+    border: 2px solid red;
+}
+
+legend{
+    position: relative;
+    top: -40px;
+    color: aliceblue;
+    padding-left: 2%;
+    margin-bottom: 2%;
+}
+
+.main-tickets{
+    display: block;
+    width: 80%;
+}
+
+.main-tickets-cards{
+    gap: 10px;    
+    display: flex;
+    background-color: white;
+}
+
+.ticket-card > img{
+    width: 100%;
+    height: 60%;
+}
+
+.ticket-card > h3, .ticket-card > span, .ticket-card > p, .ticket-card > a{
+    padding: 3%;
+}
+
+.ticket-card > span, .ticket-card > p, .ticket-card > a, .main-contact{
+    font-size: 11.5px;
+}
+
+.ticket-card > p{
+    font-weight: bold;
+}
+
+.ticket-card > a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    margin-left: 3%;
+}
+
+.ticket-card > a:hover{
+    background-color: brown;
+}
+
+.main-subscribe{
+    background-color: rgb(109, 109, 109);
+    color: white;
+    margin-top: 3%;
+    padding: 2%;
+    font-size: 11.5px;
+}
+
+.main-subscribe > h3{
+    padding-bottom: 2%;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.main-subscribe > span{
+    font-weight: lighter;
+}
+
+.main-subscribe > p{
+    padding-top: 2%;
+}
+
+.main-subscribe > input{
+    width: 100%;
+    padding: 1%;
+}
+
+.main-subscribe > button{
+    margin-top: 2%;
+    padding: 1%;
+    color: white;
+    border: none;
+    background-color: rgb(247, 154, 170);
+}
+
+.main-subscribe > button:hover, .main-contact > button:hover{
+    background-color: brown;
+    cursor: pointer;
+}
+.main-contact{
+    margin-top: 3%;
+    font-size: 16px;
+}
+
+.main-contact > h4{
+    font-size: 11.5px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.main-contact > span{
+    font-size: 11.5px;
+    font-weight: bolder;
+}
+
+.main-contact > input{
+    margin-top: 2%;
+    width: 100%;
+    padding: 1%;
+    opacity: 50%;
+}
+
+.main-contact > button{
+    color: white;
+    background-color: black;
+    margin-top: 2%;
+    padding: 1% 2%;
+    border: none;
+}
+
+footer{
+    font-size: 11.5px;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icones{
+    font-size: 20px;
+    color: rgb(36, 36, 36);
+}
+
+.powered{
+    padding-bottom: 2%;
+}
+
+@media screen and (max-width: 769px) {
+    .cabecalho{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-bar{
+        justify-content: space-around;
+    }
+
+    .header-section > h1{
+        margin-top: 5%;
+    }
+    
+    .header-section > span{
+        margin-right: 39%;
+    }
+
+    .header-section-search-input > input{
+        padding: 3%;
+        margin-bottom: 2%;
+    }
+
+    .header-section > button{
+        height: 15%;
+    }
+
+    .main-ofers, .main-tickets, .main-subscribe ,.main-contact{
+        margin-top: 4%;
+        margin-left: 2%;
+        width: 95%;
+    }
+
+    .main-tickets > h3{
+        font-size: 12px;
+        margin-bottom: 2%;
+    }
+    
+    .ticket-card > img{
+        width: 100%;
+        height: 45%;
+    }    
+
+}
+
+@media screen and (max-width: 450px) {
+    .container{
+        background-color: rgb(185, 185, 185);
+        overflow-x: hidden;
+    }
+    .cabecalho{
+        background-image: none;
+    }
+
+    .nav-bar{
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .header-section{
+        margin: 0%;
+        width: 100%;
+        display: block;
+    }
+    
+    .header-section-flight{
+        padding: 3%;
+    }
+    
+    .header-section > h1{
+        padding: 2%;
+    }
+    
+    .header-section > span{
+        padding: 2%;
+        display: block;
+        margin-right: 42.5%;
+        margin-bottom: 12%;
+    }
+    
+    .header-section-search-input{
+        width: 190%;
+        padding: 2%;
+        margin-top: -35%;
+        flex-direction: column;
+    }
+
+    .header-section-search-input > input{
+        margin-bottom: 3.5%;
+        padding: 2%;
+    }
+    
+    .header-section > button{
+        margin-top: -35px;
+        margin-left: 4%;
+        padding: 4%;
+    }
+
+    main{
+        background-color: rgb(209, 207, 209);
+    }
+    
+    .main-ofers-cards, .main-tickets-cards{
+        display: block;
+    }
+
+    .img-cinque:hover, .img-franc:hover, .img-paris:hover, .img-pisa:hover, .img-york:hover{
+        border: 2px solid rgb(53, 32, 32);
+    }
+        
+    .main-subscribe{
+       padding: 10px;
+    }
+    
+    .main-subscribe > h3{
+        padding: 5%;
+        padding-left: 3%;
+        font-size: 25px;
+    }
+    
+    .main-subscribe > span{
+        padding-left: 3%;
+    }
+    
+    .main-subscribe > p{
+        padding-top: 2%;
+        padding-left: 3%;
+    }
+    
+    .main-subscribe > input{
+        width: 95%;
+        padding: 3%;
+        margin-left: 3%;
+    }
+    
+    .main-subscribe > button{
+        padding: 3%;
+        margin-top: 5%;
+        margin-left: 3%;
+    }
+    
+    .main-contact > input{
+        padding: 5%;
+    }
+    
+    .main-contact > button{
+        padding: 5%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .container{
+        width: 100%;
+        height: 568vh;
+    }
+
+    .cabecalho{
+        background-image: none;
+    }
+
+    .nav-bar{
+        justify-content: space-between;
+    }
+
+    .header-section{
+        margin: 0%;
+        width: 100%;
+        height: 50%;
+        margin-top: 78%;
+    }
+    
+    .header-section-flight{
+        padding: 3%;
+    }
+    
+    .header-section > h1{
+        padding: 2%;
+    }
+    
+    .header-section > span{
+        padding: 2%;
+        display: block;
+        margin-right: 42.5%;
+        margin-bottom: 12%;
+    }
+    
+    .header-section-search-input{
+        width: 190%;
+        padding: 2%;
+        margin-top: -35%;
+        flex-direction: column;
+    }
+
+    .header-section-search-input > input{
+        margin-bottom: 3.5%;
+        padding: 2%;
+    }
+    
+    .header-section > button{
+        margin-top: -30%;
+        margin-left: 4%;
+        padding: 2%;
+    }
+
+    .main-ofers, .main-tickets, .main-subscribe ,.main-contact{
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    .main-ofers{
+        margin-top: -80%;
+    }
+    
+    .main-ofers-cards, .main-tickets-cards{
+        display: block;
+    }
+        
+    .main-subscribe{
+        height: 40vh;
+    }
+    
+    .main-subscribe > h3{
+        padding: 5%;
+        padding-left: 3%;
+        font-size: 25px;
+    }
+    
+    .main-subscribe > span{
+        padding-left: 3%;
+    }
+    
+    .main-subscribe > p{
+        padding-top: 2%;
+        padding-left: 3%;
+    }
+    
+    .main-subscribe > input{
+        width: 95%;
+        padding: 3%;
+        margin-left: 3%;
+    }
+    
+    .main-subscribe > button{
+        padding: 3%;
+        margin-left: 3%;
+    }
+    
+    .main-contact > button{
+        margin-bottom: 10%;
+    }
+    
+}
